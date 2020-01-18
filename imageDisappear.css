@@ -1,0 +1,104 @@
+body{
+    font-family: Lato;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+	background-color: #242424;
+
+    min-height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1{
+    font-weight: 700;
+    font-size: 3em;
+}
+#information{
+	font-size: 15px;
+    padding-top: 3%;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+ 				 0px 8px 13px rgba(0,0,0,0.1), 
+ 				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+img.floatImg{
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	-webkit-animation:myfirst 5s ; /* Chrome, Safari, Opera */
+	opacity:0;
+}
+ @-webkit-keyframes myfirst
+    {
+    0%   {left:0px; top:0px; opacity: 0;-webkit-transform:rotate(360deg)}
+    }
+
+.textLink{
+	color:white;
+}
+.middle {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFA27F;
+}
+
+.row:hover .floatImg {
+  opacity: 0.3;
+}
+
+.row:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.right{
+    margin-top: 2%;
+}
+a:hover{
+    color: hotpink;
+}
+
+.card-body{
+	color: white;
+	font-size: 20px;
+	font-family:Lato;
+}
+.social_list li {
+    display: inline-block;
+}
+
+.social_list li a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0.5em;
+    background: #fff;
+    display: inline-block;
+
+}
+
+.w3pvt_social_list li a span {
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0;
+    line-height: 2.5em;
+}
