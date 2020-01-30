@@ -28,12 +28,20 @@ img.floatImg{
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
-	-webkit-animation:myfirst 5s ; /* Chrome, Safari, Opera */
+	-webkit-animation: rotateEffect 5s; /* Chrome, Safari, Opera */
 }
- @-webkit-keyframes myfirst
+ @-webkit-keyframes rotateEffect
     {
-    0%   {left:0px; top:0px; opacity: 0;-webkit-transform:rotate(360deg)}
+		from{
+			-webkit-transform: rotate(0);
+			left: 0;
+		}
+		to{
+			-webkit-transform: rotate(360deg);
+			left: 100%;
+		}
     }
+	
 
 .textLink{
 	color:white;
